@@ -18,8 +18,8 @@ body {
 
 /* Imagen de perfil circular */
 .perfil-imagen {
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300x;
     margin: 0 auto;
     overflow: hidden;
 }
