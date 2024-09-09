@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joselhin Portafolio Web</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link  href="estilo.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Menú superior -->
+    <nav class="navbar navbar-dark">
+        <div class="container-fluid">
+            <span class="navbar-toggler-icon"></span>
+        </div>
+    </nav>
+
+    <!-- Encabezado -->
+    <div class="container encabezado text-center my-5">
+        <!-- Imagen circular -->
+        <div class="perfil-imagen">
+            <img src="perfil.jpg" alt="Joselhin" class="rounded-circle img-fluid">
+        </div>
+
+        <!-- Texto principal -->
+        <h1 class="nombre">Joselhin Sánchez</h1>
+        <p class="subtitulo">Estudiante de Diseño Industrial y Desarrollo Web</p>
+        <p class="hashtag"><a href="https://www.instagram.com/explore/tags/industrialdesign/">#industrialdesign</a></p>
+        <hr>
+    </div>
+
+    <!-- Sección de Imágenes -->
+    <div class="container imagenes text-center my-4">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <img src="portada.jpg" alt="Fondo" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Información Personal -->
+    <div class="container my-5">
+        <p class="lead text-center" id="info_personal">
+            <strong>Desde 2019 soy estudiante de Diseño Industrial en la Facultad de Arquitectura, Diseño y Urbanismo <br> 
+            y desde 2023 comencé a interesarme también por la programación.</strong>
+        </p>
+        <hr>
+    </div>
+
+    <!-- Sección Ejemplos (puedes agregar tus trabajos aquí) -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Ejemplo 1 -->
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <img src="foto1.jpg" class="card-img-top" alt="Proyecto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 1</h5>
+                        <p class="card-text">Descripción del proyecto 1.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Ejemplo 2 -->
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <img src="foto2.jpg" class="card-img-top" alt="Proyecto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 2</h5>
+                        <p class="card-text">Descripción del proyecto 2.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS y Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
