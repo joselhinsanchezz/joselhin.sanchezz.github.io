@@ -1,0 +1,63 @@
+/* Fondo oscuro */
+body {
+    background-color: rgb(6, 9, 54);
+    color: azure;
+    font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Menú superior */
+.navbar {
+    background-color: transparent;
+    padding: 20px 10px;
+}
+
+.navbar-toggler-icon {
+    color: white;
+    filter: invert(1);
+}
+
+/* Imagen de perfil circular */
+.perfil-imagen {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.perfil-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilos del encabezado */
+.encabezado {
+    text-align: center;
+    padding: 20px;
+}
+
+.nombre {
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.subtitulo {
+    color: rgb(160, 160, 160);
+    font-size: 18px;
+}
+
+.hashtag a {
+    color: rgb(160, 160, 160);
+    text-decoration: none;
+}
+
+.hashtag a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border-color: rgb(239, 195, 245);
+    width: 50%;
+    margin: 20px auto;
+}
