@@ -64,8 +64,13 @@ max-width: 600px;
 
 /* CARRUSEL */
 .carrusel-img {
-height: 500px;
-object-fit: cover;
+    max-height: 400px;
+    width: 100%;
+    object-fit: contain;
+}
+.carousel {
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 .descripcion {
