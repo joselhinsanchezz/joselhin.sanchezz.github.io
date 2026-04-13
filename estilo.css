@@ -1,69 +1,83 @@
-/* Fondo oscuro */
 body {
-    background-color: rgb(6, 9, 54);
-    color: azure;
-    font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
+background-color: rgb(6, 9, 54);
+color: azure;
+font-family: 'Montserrat', Arial, sans-serif;
 }
 
-/* Menú superior */
+/* NAVBAR */
 .navbar {
-    background-color: transparent;
-    padding: 20px 10px;
+background-color: transparent;
+padding: 20px 10px;
 }
 
 .navbar-toggler-icon {
-    color: white;
-    filter: invert(1);
+filter: invert(1);
 }
 
-/* Imagen de perfil circular */
+/* PERFIL */
 .perfil-imagen {
-    width: 300px;
-    height: 300x;
-    margin: 0 auto;
-    overflow: hidden;
+width: 200px;
+height: 200px;
+margin: 0 auto;
+overflow: hidden;
 }
 
 .perfil-imagen img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+width: 100%;
+height: 100%;
+object-fit: cover;
 }
 
-/* Estilos del encabezado */
-.encabezado {
-    text-align: center;
-
-}
-
+/* TEXTOS */
 .nombre {
-    color: white;
-    font-weight: bold;
-    font-size: 32px;
+font-weight: bold;
+font-size: 32px;
 }
 
 .subtitulo {
-    color: rgb(160, 160, 160);
-    font-size: 18px;
+color: rgb(160, 160, 160);
+font-size: 18px;
+max-width: 500px;
+margin: 0 auto;
 }
 
 .hashtag a {
-    color: rgb(160, 160, 160);
-    text-decoration: none;
+color: rgb(160, 160, 160);
+text-decoration: none;
 }
 
 .hashtag a:hover {
-    text-decoration: underline;
+text-decoration: underline;
 }
 
+/* LINEA */
 hr {
-    border-color: rgb(239, 195, 245);
-    width: 50%;
-    margin: auto;
+border-color: rgb(239, 195, 245);
+width: 50%;
+margin: auto;
 }
 
-.card-img-top {
-    width: 100%;  /* Ancho completo del contenedor */
-    height: 500px; /* Altura fija para ambas imágenes */
-    object-fit: cover; /* Escala la imagen manteniendo la proporción, pero recorta si es necesario */
+/* PORTADA */
+.portada {
+max-width: 600px;
+}
+
+/* CARRUSEL */
+.carrusel-img {
+height: 500px;
+object-fit: cover;
+}
+
+.descripcion {
+margin-top: 15px;
+color: rgb(200, 200, 200);
+max-width: 600px;
+margin-left: auto;
+margin-right: auto;
+}
+
+/* FLECHAS */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+filter: invert(1);
 }
