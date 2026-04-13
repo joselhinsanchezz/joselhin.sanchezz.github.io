@@ -1,5 +1,5 @@
 body {
-background-color: rgb(6, 9, 54);
+background-color: black;
 background-image: none !important;
 color: azure;
 font-family: 'Montserrat', Arial, sans-serif;
@@ -20,7 +20,7 @@ position: relative;
 
 .navbar-toggler-icon::before,
 .navbar-toggler-icon::after {
-content: "";
+content: ;
 position: absolute;
 width: 30px;
 height: 3px;
