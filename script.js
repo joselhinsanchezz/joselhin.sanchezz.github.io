@@ -60,3 +60,27 @@ window.open("https://instagram.com/", "_blank");
 function enviarMail() {
 window.location.href = "mailto:tuemail@mail.com";
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const menu = document.getElementById("menu");
+
+    menu.addEventListener("show.bs.collapse", function () {
+        menu.style.maxHeight = menu.scrollHeight + "px";
+    });
+
+    menu.addEventListener("shown.bs.collapse", function () {
+        menu.style.maxHeight = menu.scrollHeight + "px";
+    });
+
+    menu.addEventListener("hide.bs.collapse", function () {
+        menu.style.maxHeight = menu.scrollHeight + "px";
+
+        requestAnimationFrame(() => {
+            menu.style.maxHeight = "0px";
+        });
+    });
+
+    menu.addEventListener("hidden.bs.collapse", function () {
+        menu.style.maxHeight = "0px";
+    });
+});
