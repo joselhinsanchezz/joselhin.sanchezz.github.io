@@ -33,17 +33,15 @@ body {
 .navbar-collapse {
     width: 100%;
     overflow: hidden;
-    max-height: 0; /* Cerrado */
+    max-height: 0;
     transition: max-height 0.5s ease-in-out;
     text-align: left;
     padding-left: 10px;
 }
 
-/* Cuando Bootstrap agrega .show */
 .navbar-collapse.show {
-    max-height: 300px; /* Altura suficiente para mostrar links */
     margin-top: 15px;
-    margin-bottom: 40px; /* Empuja el resto de la página hacia abajo */
+    margin-bottom: 40px;
 }
 
 /* Lista */
