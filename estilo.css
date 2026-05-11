@@ -55,7 +55,7 @@ body {
 
 .perfil-imagen img {
     width: 180px;
-    max-width: 40%;
+    max-width: 50%;
 }
 
 .nombre {
@@ -86,7 +86,7 @@ body {
     margin-bottom: 180px !important;
 }
 
-/* Contenedor más prolijo */
+/* Contenedor general */
 #carouselPortfolio {
     max-width: 850px;
     margin: auto;
@@ -94,7 +94,13 @@ body {
     padding: 0 90px;
 }
 
-/* Todas las imágenes mismo tamaño */
+/* Mantiene altura uniforme */
+.carousel-item {
+    min-height: 500px;
+    position: relative;
+}
+
+/* Imágenes completas sin recorte */
 .carrusel-img {
     width: 100%;
     max-width: 600px;
@@ -103,14 +109,10 @@ body {
     border-radius: 10px;
     display: block;
     margin: auto;
-    
+    background-color: white;
 }
 
-.carousel-item {
-    min-height: 500px;
-}
-
-/* Texto debajo */
+/* Texto */
 .descripcion {
     margin-top: 25px;
     font-size: 1.1rem;
@@ -121,28 +123,36 @@ body {
     min-height: 80px;
 }
 
-/* Flechas fuera de imagen */
+/* =========================
+   FLECHAS DEL CARRUSEL
+========================= */
 .carousel-control-prev,
 .carousel-control-next {
     width: auto;
     background: transparent;
     border: none;
     opacity: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: auto;
+    z-index: 10;
 }
 
+/* Posición lateral */
 .carousel-control-prev {
-    left: -10px;
+    left: 20px;
 }
 
 .carousel-control-next {
-    right: -10px;
+    right: 20px;
 }
 
-/* Flechas negras */
+/* Íconos negros */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     filter: invert(1);
-    width: 1rem;
+    width: 2.5rem;
     height: 2.5rem;
 }
 
@@ -208,20 +218,31 @@ hr {
     }
 
     #carouselPortfolio {
-        padding: 0 40px;
-    }
-
-    .carousel-control-prev {
-        left: 0;
-    }
-
-    .carousel-control-next {
-        right: 0;
+        padding: 0 50px;
     }
 
     .carrusel-img {
         max-width: 100%;
         height: 250px;
+        object-fit: contain;
+    }
+
+    .carousel-item {
+        min-height: 380px;
+    }
+
+    .carousel-control-prev {
+        left: 5px;
+    }
+
+    .carousel-control-next {
+        right: 5px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 2rem;
+        height: 2rem;
     }
 
     .descripcion {
